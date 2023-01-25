@@ -42,7 +42,7 @@
 						<executions>
 							<execution>
 								<!-- Spring Boot Actuator displays build-related information if a
-									META-INF/build-info.properties file is present -->
+								META-INF/build-info.properties file is present -->
 								<goals>
 									<goal>build-info</goal>
 								</goals>
@@ -58,7 +58,8 @@
 						</executions>
 					</plugin>
 
-					<!-- Spring Boot Actuator displays build-related information if a META-INF/build-info.properties
+					<!-- Spring Boot Actuator displays build-related information if a
+					META-INF/build-info.properties
 						file is present -->
 					<plugin>
 						<groupId>pl.project13.maven</groupId>
@@ -74,7 +75,8 @@
 							<verbose>true</verbose>
 							<dateFormat>yyyy-MM-dd'T'HH:mm:ssZ</dateFormat>
 							<generateGitPropertiesFile>true</generateGitPropertiesFile>
-							<generateGitPropertiesFilename>${project.build.outputDirectory}/git.properties
+							<generateGitPropertiesFilename>
+								${project.build.outputDirectory}/git.properties
 							</generateGitPropertiesFilename>
 							<failOnNoGitDirectory>false</failOnNoGitDirectory>
 						</configuration>

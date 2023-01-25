@@ -39,8 +39,6 @@ spec:
         resources:
           limits:
             memory: 1Gi
-          requests:
-            memory: 1Gi
         env:
         - name: SPRING_PROFILES_ACTIVE
           value: kubernetes
